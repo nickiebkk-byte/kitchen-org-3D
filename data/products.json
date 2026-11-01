@@ -1,0 +1,588 @@
+{
+  "products": [
+    {
+      "sku": "1304355",
+      "name": "กล่องใสเปิดหน้า S HANDY",
+      "group": "กล่องใสเปิดหน้า HANDY",
+      "width_cm": 14.1,
+      "depth_cm": 20.0,
+      "height_cm": 7.7,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304355.png"
+    },
+    {
+      "sku": "1304361",
+      "name": "กล่องใสเปิดหน้า M HANDY",
+      "group": "กล่องใสเปิดหน้า HANDY",
+      "width_cm": 16.9,
+      "depth_cm": 24.2,
+      "height_cm": 10.5,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304361.png"
+    },
+    {
+      "sku": "1282687",
+      "name": "กล่องใสเปิดหน้า L HANDY",
+      "group": "กล่องใสเปิดหน้า HANDY",
+      "width_cm": 33.0,
+      "depth_cm": 24.0,
+      "height_cm": 14.5,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1282687.png"
+    },
+    {
+      "sku": "1304308",
+      "name": "กล่องใส S NATTY",
+      "group": "กล่องใสอเนกประสงค์ NATTY",
+      "width_cm": 11.0,
+      "depth_cm": 27.5,
+      "height_cm": 9.7,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304308.png"
+    },
+    {
+      "sku": "1282716",
+      "name": "กล่องใส M NATTY",
+      "group": "กล่องใสอเนกประสงค์ NATTY",
+      "width_cm": 26.0,
+      "depth_cm": 16.0,
+      "height_cm": 8.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1282716.png"
+    },
+    {
+      "sku": "1304339",
+      "name": "กล่องใส L NATTY",
+      "group": "กล่องใสอเนกประสงค์ NATTY",
+      "width_cm": 17.2,
+      "depth_cm": 26.0,
+      "height_cm": 11.5,
+      "zones": [
+        "ตู้แขวนบน",
+        "ใต้ซิงก์"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304339.png"
+    },
+    {
+      "sku": "1304340",
+      "name": "กล่องใส XL NATTY",
+      "group": "กล่องใสอเนกประสงค์ NATTY",
+      "width_cm": 20.0,
+      "depth_cm": 29.0,
+      "height_cm": 9.7,
+      "zones": [
+        "ใต้ซิงก์"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304340.png"
+    },
+    {
+      "sku": "1304362",
+      "name": "กล่องใส SS PULLA",
+      "group": "กล่องใสอเนกประสงค์ PULLA",
+      "width_cm": 9.9,
+      "depth_cm": 36.4,
+      "height_cm": 11.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304362.png"
+    },
+    {
+      "sku": "1304309",
+      "name": "กล่องใส S PULLA",
+      "group": "กล่องใสอเนกประสงค์ PULLA",
+      "width_cm": 14.9,
+      "depth_cm": 31.4,
+      "height_cm": 9.5,
+      "zones": [
+        "ตู้ล่าง"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304309.png"
+    },
+    {
+      "sku": "1304310",
+      "name": "กล่องใส M PULLA",
+      "group": "กล่องใสอเนกประสงค์ PULLA",
+      "width_cm": 14.9,
+      "depth_cm": 36.4,
+      "height_cm": 11.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304310.png"
+    },
+    {
+      "sku": "1304371",
+      "name": "กล่องใส L PULLA",
+      "group": "กล่องใสอเนกประสงค์ PULLA",
+      "width_cm": 25.0,
+      "depth_cm": 36.4,
+      "height_cm": 11.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1304371.png"
+    },
+    {
+      "sku": "1192431",
+      "name": "ตะกร้ามีด้ามจับ 12.5x33x8.5 Grip",
+      "group": "ตะกร้ามีด้ามจับ Grip",
+      "width_cm": 12.5,
+      "depth_cm": 33.0,
+      "height_cm": 8.5,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1192431.png"
+    },
+    {
+      "sku": "1192442",
+      "name": "ตะกร้ามีด้ามจับ 16.5x32x14 Grip",
+      "group": "ตะกร้ามีด้ามจับ Grip",
+      "width_cm": 16.5,
+      "depth_cm": 32.0,
+      "height_cm": 14.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1192442.png"
+    },
+    {
+      "sku": "1192443",
+      "name": "ตะกร้ามีด้ามจับ 22x33x14 Grip",
+      "group": "ตะกร้ามีด้ามจับ Grip",
+      "width_cm": 22.0,
+      "depth_cm": 33.0,
+      "height_cm": 14.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1192443.png"
+    },
+    {
+      "sku": "1167271",
+      "name": "ตะกร้าซ้อนได้ 15.7x21x9 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 15.7,
+      "depth_cm": 21.0,
+      "height_cm": 9.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167271.png"
+    },
+    {
+      "sku": "1167186",
+      "name": "ตะกร้าซ้อนได้ 21.4x21x9 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 21.4,
+      "depth_cm": 21.0,
+      "height_cm": 9.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167186.png"
+    },
+    {
+      "sku": "1167227",
+      "name": "ตะกร้าซ้อนได้ 21.4x27x9 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 21.4,
+      "depth_cm": 27.0,
+      "height_cm": 9.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167227.png"
+    },
+    {
+      "sku": "1167025",
+      "name": "ตะกร้าซ้อนได้ 15.7x31.5x14.7 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 15.7,
+      "depth_cm": 31.5,
+      "height_cm": 14.7,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167025.png"
+    },
+    {
+      "sku": "1167185",
+      "name": "ตะกร้าซ้อนได้ 21.4x31.5x14.7 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 21.4,
+      "depth_cm": 31.5,
+      "height_cm": 14.7,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167185.png"
+    },
+    {
+      "sku": "1167196",
+      "name": "ตะกร้าซ้อนได้ 21.4x37x14.7 MONO",
+      "group": "ตะกร้าเก็บของซ้อนได้ MONO",
+      "width_cm": 21.4,
+      "depth_cm": 37.0,
+      "height_cm": 14.7,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": true,
+      "image": "images/1167196.png"
+    },
+    {
+      "sku": "1258651",
+      "name": "ชั้นวางกระทะ&ฝา ปรับขนาดได้ 30–58.5 ซม.",
+      "group": "ชั้นวางกระทะ & ฝา",
+      "width_cm": 30.0,
+      "depth_cm": 18.0,
+      "height_cm": 19.0,
+      "zones": [
+        "ตู้ล่าง"
+      ],
+      "adjustable_width_cm": [
+        30,
+        58.5
+      ],
+      "stackable": false,
+      "image": "images/1258651.png"
+    },
+    {
+      "sku": "1261986",
+      "name": "ถาดลิ้นชักใส 9x9x4.5 KLAR",
+      "group": "ถาดเก็บของในลิ้นชัก KLAR",
+      "width_cm": 9.0,
+      "depth_cm": 9.0,
+      "height_cm": 4.5,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1261986.png"
+    },
+    {
+      "sku": "1262014",
+      "name": "ถาดลิ้นชักใส 16.3x16.3x4.8 KLAR",
+      "group": "ถาดเก็บของในลิ้นชัก KLAR",
+      "width_cm": 16.3,
+      "depth_cm": 16.3,
+      "height_cm": 4.8,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1262014.png"
+    },
+    {
+      "sku": "1261987",
+      "name": "ถาดลิ้นชักใส 23.5x16x4.5 KLAR",
+      "group": "ถาดเก็บของในลิ้นชัก KLAR",
+      "width_cm": 23.5,
+      "depth_cm": 16.0,
+      "height_cm": 4.5,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1261987.png"
+    },
+    {
+      "sku": "1262015",
+      "name": "ถาดลิ้นชักใส 32.4x9.3x4.8 KLAR",
+      "group": "ถาดเก็บของในลิ้นชัก KLAR",
+      "width_cm": 32.4,
+      "depth_cm": 9.3,
+      "height_cm": 4.8,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1262015.png"
+    },
+    {
+      "sku": "1262016",
+      "name": "ถาดลิ้นชักใส 40x16x4.5 KLAR",
+      "group": "ถาดเก็บของในลิ้นชัก KLAR",
+      "width_cm": 40.0,
+      "depth_cm": 16.0,
+      "height_cm": 4.5,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1262016.png"
+    },
+    {
+      "sku": "1217031",
+      "name": "ลิ้นชักเก็บอุปกรณ์ครัว 36.5x25x41 KLEAR",
+      "group": "ลิ้นชักเก็บอุปกรณ์ครัว KLEAR",
+      "width_cm": 36.5,
+      "depth_cm": 25.0,
+      "height_cm": 41.0,
+      "zones": [
+        "ใต้ซิงก์"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1217031.png"
+    },
+    {
+      "sku": "1285703",
+      "name": "ชั้นวางของ+ถาด 2 ชั้น 24x34x28.5 BRINK",
+      "group": "ชั้นวางของ + ถาด 2 ชั้น BRINK",
+      "width_cm": 24.0,
+      "depth_cm": 34.0,
+      "height_cm": 28.5,
+      "zones": [
+        "ใต้ซิงก์"
+      ],
+      "adjustable_width_cm": null,
+      "stackable": false,
+      "image": "images/1285703.png"
+    }
+  ],
+  "illustration_items": [
+    {
+      "code": "D-PL26",
+      "name": "จานใหญ่ Ø26 (ซ้อน 6 ใบ)",
+      "width_cm": 26.0,
+      "depth_cm": 26.0,
+      "height_cm": 8.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "shape": "plate"
+    },
+    {
+      "code": "D-PL20",
+      "name": "จานเล็ก Ø20 (ซ้อน 6 ใบ)",
+      "width_cm": 20.0,
+      "depth_cm": 20.0,
+      "height_cm": 6.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "shape": "plate"
+    },
+    {
+      "code": "D-BW16",
+      "name": "ชาม Ø16 (ซ้อน 4 ใบ)",
+      "width_cm": 16.0,
+      "depth_cm": 16.0,
+      "height_cm": 12.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "shape": "bowl"
+    },
+    {
+      "code": "D-GL8",
+      "name": "แก้วน้ำ",
+      "width_cm": 8.0,
+      "depth_cm": 8.0,
+      "height_cm": 12.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "shape": "glass"
+    },
+    {
+      "code": "D-MUG",
+      "name": "แก้วมัค",
+      "width_cm": 9.0,
+      "depth_cm": 9.0,
+      "height_cm": 10.0,
+      "zones": [
+        "ตู้แขวนบน"
+      ],
+      "shape": "mug"
+    },
+    {
+      "code": "D-PAN28",
+      "name": "กระทะ Ø28 มีด้าม",
+      "width_cm": 48.0,
+      "depth_cm": 28.0,
+      "height_cm": 6.0,
+      "zones": [
+        "ตู้ล่าง",
+        "ใต้ซิงก์"
+      ],
+      "shape": "pan"
+    },
+    {
+      "code": "D-POT20",
+      "name": "หม้อ Ø20",
+      "width_cm": 28.0,
+      "depth_cm": 20.0,
+      "height_cm": 15.0,
+      "zones": [
+        "ตู้ล่าง",
+        "ใต้ซิงก์"
+      ],
+      "shape": "pot"
+    },
+    {
+      "code": "D-KNF",
+      "name": "มีด",
+      "width_cm": 30.0,
+      "depth_cm": 4.0,
+      "height_cm": 2.0,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "shape": "knife"
+    },
+    {
+      "code": "D-SPT",
+      "name": "ตะหลิว",
+      "width_cm": 34.0,
+      "depth_cm": 9.0,
+      "height_cm": 3.0,
+      "zones": [
+        "ลิ้นชักช้อนส้อม",
+        "ตู้ล่าง"
+      ],
+      "shape": "spatula"
+    },
+    {
+      "code": "D-LDL",
+      "name": "ทัพพี / อุปกรณ์ครัว",
+      "width_cm": 32.0,
+      "depth_cm": 8.0,
+      "height_cm": 5.0,
+      "zones": [
+        "ลิ้นชักช้อนส้อม",
+        "ตู้ล่าง"
+      ],
+      "shape": "ladle"
+    },
+    {
+      "code": "D-CUT",
+      "name": "ช้อนส้อม (ชุด)",
+      "width_cm": 20.0,
+      "depth_cm": 8.0,
+      "height_cm": 2.0,
+      "zones": [
+        "ลิ้นชักช้อนส้อม"
+      ],
+      "shape": "cutlery"
+    },
+    {
+      "code": "D-BTS",
+      "name": "ขวดเครื่องปรุง",
+      "width_cm": 7.0,
+      "depth_cm": 7.0,
+      "height_cm": 22.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง",
+        "ใต้ซิงก์"
+      ],
+      "shape": "bottle"
+    },
+    {
+      "code": "D-BTL",
+      "name": "ขวดน้ำมัน / น้ำยา",
+      "width_cm": 9.0,
+      "depth_cm": 9.0,
+      "height_cm": 28.0,
+      "zones": [
+        "ตู้ล่าง",
+        "ใต้ซิงก์"
+      ],
+      "shape": "bottle"
+    },
+    {
+      "code": "D-JRL",
+      "name": "โหลแก้วใหญ่",
+      "width_cm": 11.0,
+      "depth_cm": 11.0,
+      "height_cm": 15.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "shape": "jar"
+    },
+    {
+      "code": "D-JRS",
+      "name": "โหลแก้วเล็ก",
+      "width_cm": 9.0,
+      "depth_cm": 9.0,
+      "height_cm": 10.0,
+      "zones": [
+        "ตู้แขวนบน",
+        "ตู้ล่าง"
+      ],
+      "shape": "jar"
+    }
+  ],
+  "zones": {
+    "ตู้แขวนบน": "upper",
+    "ตู้ล่าง": "lower",
+    "ใต้ซิงก์": "sink",
+    "ลิ้นชักช้อนส้อม": "drawer"
+  }
+}
