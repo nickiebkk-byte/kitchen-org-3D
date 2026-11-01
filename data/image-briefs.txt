@@ -1,0 +1,18 @@
+Generated using built-in image generation. Reference: original product photographs. Photorealistic open white wall cabinets, oak interiors, blue/orange editorial headings, outside W x D x H in cm. Images are illustrative; exact SKU quantities and placement are specified in ideas.json.
+04 | SPICE STATION | 60 | 35 | 72 | small spice jars and seasoning sachets
+05 | TEA CORNER | 60 | 35 | 72 | tea bags herbal tea refill pouches and tea accessories
+06 | COFFEE CORNER | 60 | 35 | 72 | coffee sachets coffee bean bags and paper coffee filters
+07 | BREAKFAST | 80 | 35 | 80 | oatmeal cereal packets and breakfast drink sachets
+08 | BAKING ESSENTIALS | 80 | 35 | 80 | sealed flour pouches baking powder packets and cookie cutters
+09 | NOODLE BAR | 80 | 35 | 80 | dry noodle packs ramen packets and soup sachets
+10 | SNACK STATION | 80 | 35 | 80 | crackers nuts and snack pouches
+11 | HEALTHY PANTRY | 80 | 35 | 80 | grain pouches seeds and dried fruit packets
+12 | THAI PANTRY | 80 | 35 | 80 | Thai curry paste sachets dried herbs and small spice jars
+13 | LUNCH BOX CORNER | 80 | 35 | 80 | empty small reusable lunch boxes silicone cups and lunch bags
+14 | TABLE ESSENTIALS | 80 | 35 | 80 | cloth napkins coasters and lightweight table accessories
+15 | DESSERT CORNER | 60 | 35 | 72 | jelly powder sachets cocoa pouches and paper cupcake liners
+16 | DRINK MIXES | 60 | 35 | 72 | cocoa sachets powdered drink packets and tea refill packs
+17 | PASTA PANTRY | 120 | 40 | 80 | dry pasta bags small sauce jars on lowest shelf and seasoning sachets
+18 | FAMILY BREAKFAST | 120 | 40 | 80 | cereal oat packets coffee pouches and breakfast snacks
+19 | BAKING COLLECTION | 120 | 40 | 80 | baking ingredient pouches lightweight baking tools and paper liners
+20 | WEEKLY STOCK | 120 | 40 | 80 | neatly categorized spare dry food refill pouches and napkins

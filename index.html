@@ -175,14 +175,18 @@ textarea.copy{width:100%;height:90px;font-family:var(--f-mono);font-size:11px}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 </style>
 <link rel="stylesheet" href="theme-blue-orange.css">
+<link rel="stylesheet" href="ideas.css">
+<script src="ideas-data.js"></script>
 </head>
 <body>
 
 <header class="top">
   <h1>จัดระเบียบตู้ครัว 3D<small>วางกล่องและตะกร้าในตู้ของคุณ ดูว่าใส่พอดีไหม</small></h1>
+  <button id="openIdeas" type="button">✦ เลือกจากไอเดียของเรา</button>
   <nav class="zones" id="zones" aria-label="เลือกโซน"></nav>
 </header>
 
+<dialog id="ideasDialog" aria-labelledby="ideasHeading"><div class="ideas-head"><div><h2 id="ideasHeading">เลือกจากไอเดียของเรา</h2><p>20 ไอเดีย • เลือกขนาดตู้ แล้วลองจัดวางต่อได้</p></div><button id="closeIdeas" aria-label="ปิด">✕</button></div><div id="ideaFilters"><button data-width="0">ทั้งหมด</button><button data-width="60">60 ซม.</button><button data-width="80">80 ซม.</button><button data-width="120">120 ซม.</button></div><p class="idea-note">ขนาดบนภาพเป็นขนาดตู้ภายนอก กว้าง × ลึก × สูง • ภาพสร้างเพื่อแรงบันดาลใจ สัดส่วนและของประกอบอาจต่างจากแบบจัดวางจริง โปรดดูรายการสินค้าและขนาดภายในก่อนเลือก</p><div id="ideaGallery"></div><div id="ideaDetail" hidden></div></dialog>
 <main class="app">
   <aside class="rail">
     <section>
@@ -427,7 +431,9 @@ function issues(i,c){
 
 /* ---------- three.js scene ---------- */
 const host=document.getElementById('view');
-const renderer=new THREE.WebGLRenderer({antialias:true});
+let webglAvailable=true, renderer;
+try{renderer=new THREE.WebGLRenderer({antialias:true});}catch(error){webglAvailable=false;renderer={domElement:document.createElement('canvas'),setPixelRatio(){},setSize(){},render(){}};viewMode='2d';const note=document.createElement('p');note.textContent='อุปกรณ์นี้ไม่รองรับ 3D ในขณะนี้ ใช้แบบ 2D ได้ตามปกติ';note.style.cssText='padding:10px;color:#123c70;background:#fff3e9';host.prepend(note);}
+
 renderer.setPixelRatio(Math.min(2,devicePixelRatio));
 host.appendChild(renderer.domElement);
 const scene=new THREE.Scene();
@@ -546,6 +552,7 @@ function buildItems(){itemG.clear();const off=offsets();cabs().forEach((c,k)=>c.
 
 let last3d='iso';
 function frame(mode){
+  if(!webglAvailable && mode!=='2d')mode='2d';
   if(mode) viewMode=mode;
   document.querySelectorAll('.hud button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===viewMode));
   if(viewMode==='2d'){render2D();return;}
@@ -866,6 +873,17 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',themeScene)
 new MutationObserver(themeScene).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 scene.background=new THREE.Color(css('--scene'));
 resize(); loadForm(); ZK.forEach(z=>{const o=S.zone;S.zone=z;S[z].cabs.forEach(settleCab);S.zone=o;}); refresh(true);
+
+/* Inspiration gallery: isolated extension, existing editor functions retained. */
+const ideasDialog=$('ideasDialog'), ideaGallery=$('ideaGallery'), ideaDetail=$('ideaDetail');
+let chosenIdea=null;
+function ideaList(idea){const counts={};for(let b=0;b<idea.bays;b++)idea.rows.flat().forEach(s=>counts[s]=(counts[s]||0)+1);return counts;}
+function gallery(width=0){ideaDetail.hidden=true;ideaGallery.hidden=false;ideaGallery.innerHTML=window.CABINET_IDEAS.filter(i=>!width||i.outer[0]===width).map(i=>`<button class="idea-card" data-idea="${i.id}"><img loading="lazy" src="${i.image}" alt="${i.title}"><span class="idea-number">${String(i.id).padStart(2,'0')} · ${i.name}</span><strong>${i.title}</strong><span>ขนาดตู้ ${i.outer.join(' × ')} ซม.</span><span class="idea-link">ดูสินค้าและเลือกแบบ →</span></button>`).join('');}
+$('openIdeas').onclick=()=>{gallery();ideasDialog.showModal();};$('closeIdeas').onclick=()=>ideasDialog.close();
+$('ideaFilters').onclick=e=>{const b=e.target.closest('[data-width]');if(b)gallery(+b.dataset.width);};
+ideaGallery.onclick=e=>{const b=e.target.closest('[data-idea]');if(b)detail(+b.dataset.idea);};
+function detail(id){chosenIdea=window.CABINET_IDEAS.find(i=>i.id===id);const i=chosenIdea;ideaGallery.hidden=true;ideaDetail.hidden=false;ideasDialog.scrollTop=0;ideaDetail.innerHTML=`<button id="backIdeas">← กลับไปดูไอเดีย</button><div class="idea-detail-grid"><img src="${i.image}" alt="${i.title}"><div><h2>${i.title}</h2><p>${i.name}</p><p>ตู้ภายนอก ${i.outer.join(' × ')} ซม.</p><p>พื้นที่ภายในต่อตู้ ${i.inner.join(' × ')} ซม. จำนวน ${i.bays} ตู้ • แผ่นชั้น 2 แผ่นต่อตู้</p><p>แบบนี้ใช้ขนาดตัวอย่างแผ่นตู้หนา 1.8 ซม. ตรวจบานพับและพื้นที่จริงก่อนใช้งาน</p><h3>สินค้าที่ใช้ในแบบจัดวาง</h3><div class="idea-products">${Object.entries(ideaList(i)).map(([sku,n])=>`<div><img src="data/images/${sku}.png" alt=""><span>${PBY[sku].n||PBY[sku].name||sku}<br>SKU ${sku}<br>${PBY[sku].w} × ${PBY[sku].d} × ${PBY[sku].h} ซม.</span><b>× ${n}</b></div>`).join('')}</div><p>อาหาร ภาชนะ และของประกอบในภาพไม่ได้รวมในรายการสินค้า แบบ 2D/3D แสดงสินค้าจัดเก็บตามขนาดจริง</p><label><input type="checkbox" id="acceptIdea"> ใช้แบบนี้แทนการจัดวางตู้แขวนปัจจุบัน (โซนอื่นคงเดิม)</label><div class="idea-actions"><button id="applyIdea2d">เลือกแบบนี้ · ดู 2D</button><button id="applyIdea3d">เลือกแบบนี้ · ดู 3D</button></div><p id="ideaStatus" role="status"></p></div></div>`;$('backIdeas').onclick=()=>gallery();$('applyIdea2d').onclick=()=>applyIdea('2d');$('applyIdea3d').onclick=()=>applyIdea('iso');}
+function applyIdea(mode){if(!$('acceptIdea').checked){$('ideaStatus').textContent='กรุณายืนยันการแทนแบบตู้แขวนปัจจุบันก่อน';return;}const idea=chosenIdea;S.zone='upper';S.ac.upper=0;sel=null;S.upper.cabs=Array.from({length:idea.bays},()=>{const c=mkCab('upper',{W:idea.inner[0],D:idea.inner[1],H:idea.inner[2],S:2,P:false});idea.rows.forEach((row,level)=>{const used=row.reduce((sum,s)=>sum+PBY[s].w,0), gap=row.length>1?Math.max(0,Math.min(2,(c.W-used)/(row.length-1))):0;const total=used+(row.length-1)*gap;let left=-total/2;row.forEach(sku=>{const p=PBY[sku];c.items.push(it(sku,level,left+p.w/2,0));left+=p.w+gap;});});settleCab(c);return c;});loadForm();refresh(true);frame(mode);ideasDialog.close();toast('เปิดไอเดียแล้ว สามารถปรับขนาดและจัดวางต่อได้');}
 
 </script>
 </body>
