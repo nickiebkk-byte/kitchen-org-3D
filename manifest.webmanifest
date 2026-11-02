@@ -1,6 +1,6 @@
 {
-  "name": "KITCHEN STORAGE 3D",
-  "short_name": "KITCHEN STORAGE",
+  "name": "จัดระเบียบตู้ครัว 3D",
+  "short_name": "ตู้ครัว 3D",
   "description": "วางแผนจัดกล่องและตะกร้าในตู้ครัวแบบ 3D/2D",
   "lang": "th",
   "start_url": "./",
@@ -8,7 +8,7 @@
   "display": "standalone",
   "orientation": "any",
   "background_color": "#f1f5fb",
-  "theme_color": "#1558da",
+  "theme_color": "#0755b5",
   "icons": [
     {
       "src": "icons/icon-192.png",

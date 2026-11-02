@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>KITCHEN STORAGE 3D</title>
+<title>จัดระเบียบตู้ครัว 3D</title>
 <meta name="description" content="วางแผนจัดกล่องและตะกร้าในตู้แขวน ตู้ล่าง ใต้ซิงก์ และลิ้นชัก แบบ 3D และ 2D พร้อมขนาด ซม.">
 <meta name="theme-color" content="#0755b5">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -14,9 +14,9 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="KITCHEN STORAGE 3D">
+<meta name="apple-mobile-web-app-title" content="ตู้ครัว 3D">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="application-name" content="KITCHEN STORAGE 3D">
+<meta name="application-name" content="ตู้ครัว 3D">
 <meta name="msapplication-TileColor" content="#0755b5">
 <meta name="msapplication-TileImage" content="icons/mstile-150.png">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-family:system-ui,sans-serif;font-size:14px}img{max-width:100%}</style>
@@ -177,18 +177,16 @@ textarea.copy{width:100%;height:90px;font-family:var(--f-mono);font-size:11px}
 <link rel="stylesheet" href="theme-blue-orange.css">
 <link rel="stylesheet" href="ideas.css">
 <script src="ideas-data.js"></script>
-<link rel="stylesheet" href="theme-rounded.css">
-<script src="presentation-layout.js" defer></script>
 </head>
 <body>
 
 <header class="top">
-  <h1><img class="brand-icon" src="icons/icon-192.png" alt=""><span class="brand-text">KITCHEN STORAGE <em>3D</em><small>EASY TO SHOP</small></span></h1>
+  <h1>จัดระเบียบตู้ครัว 3D<small>วางกล่องและตะกร้าในตู้ของคุณ ดูว่าใส่พอดีไหม</small></h1>
+  <button id="openIdeas" type="button">✦ เลือกจากไอเดียของเรา</button>
   <nav class="zones" id="zones" aria-label="เลือกโซน"></nav>
 </header>
 
 <dialog id="ideasDialog" aria-labelledby="ideasHeading"><div class="ideas-head"><div><h2 id="ideasHeading">เลือกจากไอเดียของเรา</h2><p>20 ไอเดีย • เลือกขนาดตู้ แล้วลองจัดวางต่อได้</p></div><button id="closeIdeas" aria-label="ปิด">✕</button></div><div id="ideaFilters"><button data-width="0">ทั้งหมด</button><button data-width="60">60 ซม.</button><button data-width="80">80 ซม.</button><button data-width="120">120 ซม.</button></div><p class="idea-note">ขนาดบนภาพเป็นขนาดตู้ภายนอก กว้าง × ลึก × สูง • ภาพสร้างเพื่อแรงบันดาลใจ สัดส่วนและของประกอบอาจต่างจากแบบจัดวางจริง โปรดดูรายการสินค้าและขนาดภายในก่อนเลือก</p><div id="ideaGallery"></div><div id="ideaDetail" hidden></div></dialog>
-<div class="page-intro"><h2>จัดเก็บในห้องครัว</h2><p>วางกล่องและตะกร้า เลือกสินค้า แล้วลองจัดวางในตู้ของคุณ</p><button id="openIdeas" type="button">✦ เลือกจากไอเดียของเรา</button></div>
 <main class="app">
   <aside class="rail">
     <section>
@@ -253,7 +251,7 @@ textarea.copy{width:100%;height:90px;font-family:var(--f-mono);font-size:11px}
 
   <aside class="cat">
     <div>
-      <h2>สินค้า</h2>
+      <h2>สินค้า (แยกตามประเภท)</h2>
       <div class="filter" role="group" aria-label="ตัวกรองสินค้า">
         <button id="fZone" aria-pressed="true">แนะนำสำหรับโซนนี้</button>
         <button id="fAll" aria-pressed="false">ทั้งหมด</button>
@@ -265,10 +263,8 @@ textarea.copy{width:100%;height:90px;font-family:var(--f-mono);font-size:11px}
 <footer class="foot">
   <section class="sum">
     <div class="sumhead">
-      <h2>รายการสินค้าที่ใช้</h2>
+      <h2>รายการสินค้าที่ใช้ (ทุกโซน)</h2>
       <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <button class="btn" id="exportPNG">ส่งออก PNG</button>
-        <button class="btn" id="exportPDF">ส่งออก PDF</button>
         <button class="btn" id="copyBtn">คัดลอกรายการ</button>
         <button class="btn ghost" id="clearBtn">ล้างโซนนี้</button>
       </div>
@@ -890,6 +886,5 @@ function detail(id){chosenIdea=window.CABINET_IDEAS.find(i=>i.id===id);const i=c
 function applyIdea(mode){if(!$('acceptIdea').checked){$('ideaStatus').textContent='กรุณายืนยันการแทนแบบตู้แขวนปัจจุบันก่อน';return;}const idea=chosenIdea;S.zone='upper';S.ac.upper=0;sel=null;S.upper.cabs=Array.from({length:idea.bays},()=>{const c=mkCab('upper',{W:idea.inner[0],D:idea.inner[1],H:idea.inner[2],S:2,P:false});idea.rows.forEach((row,level)=>{const used=row.reduce((sum,s)=>sum+PBY[s].w,0), gap=row.length>1?Math.max(0,Math.min(2,(c.W-used)/(row.length-1))):0;const total=used+(row.length-1)*gap;let left=-total/2;row.forEach(sku=>{const p=PBY[sku];c.items.push(it(sku,level,left+p.w/2,0));left+=p.w+gap;});});settleCab(c);return c;});loadForm();refresh(true);frame(mode);ideasDialog.close();toast('เปิดไอเดียแล้ว สามารถปรับขนาดและจัดวางต่อได้');}
 
 </script>
-<script src="export-report.js"></script>
 </body>
 </html>
